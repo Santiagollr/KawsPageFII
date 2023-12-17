@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brian Donnelly</title>
+		<link rel="stylesheet" type="text/css" href="../KawsPage/css/style.css">
+		<script>
+			function handleNavClick(obj) {
+				var elements = document.getElementsByClassName("active");
+				obj.classList.add("active");
+				for (var i = 0; i < elements.length; i++) {
+					var element = elements[i];
+					if (element.id != obj.id) {
+						element.classList.remove("active");
+						document.getElementById(element.id.slice(4)).classList.add("hidden");
+					}
+				}
+				document.getElementById(obj.id.slice(4)).classList.remove("hidden");
+			}
+		</script>
+	</head>
+	
+	<body id="body">
+		<div class="top-border"></div>
+		<!--HEADER -->
+		<div class="header">
+			<h2>Kaws</h2>
+			<p>Brian Donnelly</p>
+		</div>
+
+		<!--NAV BAR -->
+		<ul>
+			<li><a id="nav_historia" onClick="handleNavClick(this)">Historia</a></li>
+			<li><a id="nav_colaboraciones" onClick="handleNavClick(this)">Colaboraciones</a></li>
+			<li><a id="nav_fundamentos" onClick="handleNavClick(this)">Fundamentos</a></li>
+			<li><a id="nav_sobreMi" onClick="handleNavClick(this)">Sobre Mi</a></li>
+		</ul>
+
+		<!--Historia -->
+		<div id="historia" class="content hidden">
+			<h3 id="center">Historia</h3>
+			<p>Su carrera como artista del grafiti se inició cuando vivía en Jersey City. Después, al mudarse a Nueva York en los años 1990, KAWS comenzó a modificar las imágenes de la publicidad en paradas de autobuses y cabinas telefónicas. Estos afiches rediseñados quedaban en el olvido y podían pasar varios meses así, pero cuando la popularidad de KAWS se disparó, los carteles eran intensamente buscados.</p>
+            <p>A fines de los años 1990, KAWS comenzó a diseñar y producir ediciones limitadas de juguetes hechos con vinilo. Más juguetes e indumentaria fue creada para Original Fake, una entonces emergente tienda en colaboración con Medicom Toy, en el distrito de Aoyama, Tokio, donde una edición limitada original de un producto es lanzada cada semana. KAWS también participó en otras colaboracioens comerciales junto al productor musical Nigo para la marca de ropa A Bathing Ape, con Jun Takahashi para Undercover y con Michael Neumann para Kung Faux. También fue invitado a diseñar tablas de snowboarding para Burton y zapatillas para Nike y Vans. En agosto de 2010 creó una edición limitada de botellas para la cerveza mexicana Dos Equis.</p>
+			<br>
+			<img src="../KawsPage/public/images/KawsHistoria.jpg" alt="foto principal">
+		</div>
+
+		<!--Colaboraciones-->
+		<div id="colaboraciones" class="content hidden">
+			<h3 id="colaboracionesText">Obras Iconicas</h3>
+			<p>Estas son algunas de las obras más iconicas de Kaws:</p>
+			<br>
+			<div class="image-container">
+				<b>Kimpsons:</b>
+				<img src="../KawsPage/public/images/Kimpsons-2001.jpg" alt="">
+			</div>
+			<div class="image-container">
+				<b>Pinocho:</b>
+				<img src="../KawsPage/public/images/Pinocchio-2010.jpg" alt="">
+			</div>
+			<div class="image-container">
+				<b>Mickey Mouse:</b>
+				<img src="../KawsPage/public/images/Mickey-Mouse-2010.jpg" alt="">
+			</div>
+		</div>
+
+		<!--Fundamentos-->
+		<div id="fundamentos" class="content hidden">
+
+			<div class="fancy">Fundamentos</div>
+
+			<div class="custom-container">
+				<h2 class="custom-title">Fundamentos para la ingeniería</h2>
+				
+				<div>
+				  <h3 class="custom-subtitle">PARTE I: BLOQUE I</h3>
+				  <p class="custom-text">Unidad1 Antecedentes y perspectivas históricas<br>Unidad2 El contexto actual de la Informática</p>
+				  <p class="custom-text">Unidad3 El contexto actual de la Informática</p>
+				</div>
+				
+				<div>
+				  <h3 class="custom-subtitle">PARTE I: BLOQUE II</h3>
+				  <p class="custom-text">Unidad4 El Software<br>Unidad5 Hardware</p>
+				  <p class="custom-text">Unidad 6 Sistemas Operativos<br>Unidad7 Redes</p>
+				  <p class="custom-text">Unidad8 Nuevas tendencias I<br>Unidad 8 Nuevas tendencias II</p>
+				</div>
+				
+				<div>
+				  <h3 class="custom-subtitle">PARTE I: BLOQUE III</h3>
+				  <p class="custom-text">Unidad9 Representación de la información<br>Unidad10Bases de datos</p>
+				</div>
+				
+				<div>
+				  <h3 class="custom-subtitle">PARTE II: BLOQUE IV</h3>
+				  <p class="custom-text">Unidad1 Introducción al desarrollo de software<br>Unidad2 Herramientas de desarrollo</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!--SobreMi-->
+		<div id="sobreMi" class="content hidden">
+			<h3 id="center">Sobre Mi</h3>
+			<p>Soy un estudiante de la universidad Francisco de Vitoria, estudio ingenieria informática y estoy en primer año.</p>
+			<img src="../KawsPage/public/images/CV.png" alt="">
+		</div>
+
+		<div id="contacto" class="content">
+			<h3 id="center">Contactanos</h3>
+			<p id="center">Si desea recibir las notificaciones de las últimas noticias o tiene alguna duda rellene este formulario para contactar con nosotros.</p>
+			<a id="center" href="../KawsPage/formulario.html">
+				<button>Ir al Formulario</button>
+			</a>
+		</div>
+
+		<!--MásPáginas-->
+		<div class="pages">
+			<p id="center" class="marginone">Más páginas</p>
+			
+			<div class="square" id="i">
+				<img src="../KawsPage/public/images/Hector.jpg" alt="Imagen 1">
+				<a href="https://enriquealvaro.github.io/Fundamentos-I-/">EnriqueAlvaro</a>
+			</div>
+			
+			<div class="square">
+				<img src="../KawsPage/public/images/David.jpg" alt="Imagen 2">
+				<a href="https://github.com/DaviddAs777/ProyectoPaginaWeb.git">DavidAlfajeme</a>
+			</div>
+
+			<div class="square">
+				<img src="../KawsPage/public/images/Hector2.jpg" alt="Imagen 3">
+				<a href="https://enriquealvaro.github.io/Fundamentos-I-/">HectorFernandez</a>
+			</div>
+			
+			<div class="square">
+				<img src="../KawsPage/public/images/David2.jpg" alt="Imagen 4">
+				<a href="https://github.com/DaviddAs777/ProyectoPaginaWeb.git">Blascobych</a>
+			</div>
+        </div>
+		<div class="footer">
+			<div>Página hecha por: Santiago Llanos Rodríguez</div>
+		</div>
+	</body>
+</html>

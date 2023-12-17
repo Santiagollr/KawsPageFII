@@ -1,0 +1,229 @@
+body {
+    position: relative;
+    font: 28px "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0;
+    color: #555;
+}
+
+.top-border {
+	background-color: #D0ECE7;
+	height: 0.5rem;
+}
+
+.header {
+	padding-bottom: 2rem;
+    background: linear-gradient(#D0ECE788 2%, white 90%);
+}
+
+.header h2, .header p, .header h1 {
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+	font-variant: small-caps;
+}
+
+.header p {
+    margin-bottom: 0.2rem;
+}
+
+h1 {
+    margin-top: 0;
+    padding: 2rem 0;
+    font-size: 100px;
+}
+
+h2 {
+	margin-top: 0;
+	padding-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: 80px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    overflow: hidden;
+    background: #D0ECE7;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #e5f9ee;
+}
+
+.active {
+    background-color: #e5f9ee;
+}
+
+.content {
+	padding: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    border: 1px solid #e3ece7;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+.column-title {
+    text-align: center;
+    background-color: beige;
+}
+
+.column-deets {
+    font-size: 20px;
+    font-style: italic;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.column-description {
+    font-size: 18px;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+}
+
+.fancy {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12rem;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+    color: teal;
+    transition: transform .8s ease-in-out;
+}
+
+.fancy:hover {
+    transform:rotate(360deg);
+}
+
+.footer {
+    position: relative;
+    clear: both;
+    padding: 2.5rem 0;
+    margin-bottom: 3rem;
+    color: #8e8e8e;
+    font-size: 18px;
+    background-color: #D0ECE7;
+    box-shadow: inset 0px 3px 15px 0px #aaa;
+    text-align: center;
+}
+
+#center{
+    text-align: center;
+}
+
+#historia img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    display: block; /* Elimina el espacio adicional por debajo de la imagen */
+}
+
+#colaboracionesText {
+    text-align: center !important; /* Centra solo el texto dentro del h3 */
+    /* Puedes agregar estilos adicionales para el h3 si es necesario */
+}
+
+#contacto{
+    background-color: #D0ECE788;
+}
+
+.image-container {
+    text-align: center;
+}
+
+  /* Estilo para la imagen */
+.image-container img {
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .custom-title {
+    color: #333;
+  }
+
+  .custom-subtitle {
+    color: #4caf50;
+  }
+
+  .custom-text {
+    color: #666;
+  }
+
+  .square-container {
+    text-align: center; /* Centra los elementos en el contenedor */
+  }
+
+  .square {
+    display: inline-block;
+    width: 20%; /* Cada cuadrado ocupa el 20% del ancho de la pantalla */
+    background-color: #D0ECE7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 10px;
+    margin: 1%; /* Añade un margen del 1% entre los cuadrados */
+  }
+
+  .square img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    margin-right: 10px; /* Agrega un margen a la derecha de la imagen */
+  }
+
+  #i{
+    margin-left: 4% !important;
+  }
+
+  .pages{
+    margin-top: 0px;
+    background-color: #D0ECE7;
+  }
+
+  .marginone{
+    margin-top: 0%;
+  }
